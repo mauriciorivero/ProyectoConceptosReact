@@ -1,0 +1,44 @@
+/* Estilos para el componente atómico Card */
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Variantes de tarjeta */
+.card--default {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card--elevated {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card--outlined {
+  border: 1px solid #e0e0e0;
+  box-shadow: none;
+}
+
+/* Estados interactivos */
+.card--hoverable:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card--clickable {
+  cursor: pointer;
+}
+
+.card--clickable:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card--clickable:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} 

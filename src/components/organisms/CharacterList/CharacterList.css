@@ -1,0 +1,121 @@
+/* Estilos para el componente organismo CharacterList */
+
+.character-list {
+  flex: 1;
+  padding: 2rem 1rem;
+  min-height: 50vh;
+}
+
+.character-list__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.character-list__title {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.character-list__description {
+  text-align: center;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.character-list__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.character-list__loading {
+  text-align: center;
+  padding: 2rem;
+}
+
+.character-list__load-more {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.character-list__load-button {
+  background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.character-list__load-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.character-list__load-button:active {
+  transform: translateY(0);
+}
+
+.character-list__load-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Estilos para estado de error */
+.character-list--error {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.character-list__retry-button {
+  background: linear-gradient(135deg, #f44336 0%, #d32f2f 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
+}
+
+.character-list__retry-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .character-list {
+    padding: 1rem;
+  }
+  
+  .character-list__grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .character-list__description {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .character-list__load-button,
+  .character-list__retry-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+} 

@@ -1,0 +1,60 @@
+/* Estilos para el componente atómico Text */
+
+.text {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Variantes de texto */
+.text--title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.text--subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.text--body {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.text--caption {
+  font-size: 0.875rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+/* Colores */
+.text--default {
+  color: #333;
+}
+
+.text--white {
+  color: white;
+}
+
+.text--primary {
+  color: #2a5298;
+}
+
+.text--secondary {
+  color: #666;
+}
+
+.text--success {
+  color: #4caf50;
+}
+
+.text--error {
+  color: #f44336;
+}
+
+.text--warning {
+  color: #ff9800;
+} 

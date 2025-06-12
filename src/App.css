@@ -1,0 +1,18 @@
+/* Estilos para el componente principal App */
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+}
+
+/* Asegura que el contenido se distribuya correctamente */
+.app > * {
+  flex-shrink: 0;
+}
+
+/* El main (CharacterList) debe expandirse para llenar el espacio disponible */
+.app main {
+  flex: 1;
+} 

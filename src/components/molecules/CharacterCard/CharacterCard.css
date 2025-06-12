@@ -1,0 +1,57 @@
+/* Estilos para el componente molécula CharacterCard */
+
+.character-card {
+  max-width: 350px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.character-card__image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.character-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.character-card:hover .character-card__image img {
+  transform: scale(1.05);
+}
+
+.character-card__content {
+  padding: 0.5rem 0;
+}
+
+.character-card__name {
+  margin-bottom: 0.5rem;
+  color: #2a5298;
+}
+
+.character-card__status {
+  margin-bottom: 1rem;
+}
+
+.character-card__status-text {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.character-card__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  border-top: 1px solid #eee;
+  padding-top: 0.75rem;
+}
+
+.character-card__details strong {
+  color: #555;
+} 
